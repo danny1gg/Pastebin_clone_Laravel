@@ -15,7 +15,7 @@
 		<div id = "left_side_content" class = "r5">
 			<h4>New Paste</h4>
 			<div id = "paste_form">
-				<form action="/pastes/addPaste" method = "post">
+				<form action="/paste/create" method = "post">
 					@csrf
 					<textarea id = "text_input" name = "textInput" placeholder="..." autofocus></textarea>
 					<br>
