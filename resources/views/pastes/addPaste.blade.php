@@ -15,7 +15,7 @@
 			<div id = "left_side_content" class = "r5">
 				<h2 style = "color: #2CC0D1;">Paste created successfully!</h2><br>
 				<h4 style = "color: #2CC0D1;">Copy the link for your paste: </h4>
-				<a href = "/{{ $pasteId }}"><h4 style = "color: yellow"> {{ "http://localhost:8000/paste/" . $pasteId }}</h4><hr></a> 
+				<a href = "/paste/{{ $pasteId }}"><h4 style = "color: yellow"> {{ "http://localhost:8000/paste/" . $pasteId }}</h4><hr></a> 
 				<div id = "paste"> 
 					<p>
 					{!! nl2br(str_replace(array("\t", "    "), "&nbsp;&nbsp;&nbsp;&nbsp;", $paste)) !!}
