@@ -2,7 +2,7 @@
 		<ul>
 			<h4>Public Pastes</h4>
 			@foreach ($pastes as $paste)
-				<a href = "{{ $paste->id }}">
+				<a href = "/paste/{{ $paste->id }}">
 					<li><img src = "imgs/public.png" width="17px"><b class = "text_lgreen">
 						@if (strlen($paste->title) <= 15) 
 							{{ $paste->title }}
