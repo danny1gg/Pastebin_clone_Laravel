@@ -22,5 +22,5 @@ Route::get('/', function () {
 
 
 Route::get('/', [fetchFromDB::class, 'fetchFromDB']);
-Route::get('{id}', [fetchFromDB::class, 'fetchPastes']);
-Route::post('/pastes/addPaste', [validateForm::class, 'validatePastes']);
+Route::get('/paste/{id}', [fetchFromDB::class, 'fetchIfPasteExist']);
+Route::post('paste/create', [validateForm::class, 'validatePastes']);
