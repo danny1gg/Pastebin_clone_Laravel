@@ -30,11 +30,11 @@
 					<div id = "paste_created_at"> {{ $currentPaste->created_at }} </div>
 					<div id = "paste_exposure"> 
 						@if ($currentPaste->exposure == "Public")
-							<img src = "imgs/public.png" width="17px"> 
+							<img src = "/../imgs/public.png" width="17px"> 
 						@elseif ($currentPaste->exposure == "Unlisted") 
-							<img src = "imgs/unlisted.png" width="17px">
+							<img src = "/../imgs/unlisted.png" width="17px">
 						@elseif ($currentPaste->exposure == "Private") 
-							<img src = "imgs/private.png" width="17px">
+							<img src = "/../imgs/private.png" width="17px">
 						@endif
 						{{ $currentPaste->exposure }}
 
